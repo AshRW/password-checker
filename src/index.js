@@ -8,8 +8,10 @@ input.addEventListener('input', (e)=>{
     const input = e.target.value;
     if(input){
         if(!/^\s+/.test(input)){
-            const passwordResultObj = passwordChecker(input)
-            renderInfo(passwordResultObj)
+            if(input.length<=55){
+                const passwordResultObj = passwordChecker(input)
+                renderInfo(passwordResultObj)
+            }
         }else{
             e.target.value=''
             alert("Password can't start with Space")

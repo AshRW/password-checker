@@ -3,13 +3,12 @@ html{
     height: 100%;
 }
 body {
-    /* color: #fff; */
     font-family: 'Noto Sans', sans-serif;
-    transition: all 1s;
     margin: 0;
     height: 100%;
     display: table;
     width: 100%;
+    transition: all 1s;
 }
 
 .container{
@@ -31,7 +30,7 @@ body {
 
 .title{
     text-align: center;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     margin: 0 4em 1em 4em;
     padding: 2em;
     background: #cfcfcf;
@@ -42,7 +41,7 @@ body {
 }
 
 .container-items{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: center;

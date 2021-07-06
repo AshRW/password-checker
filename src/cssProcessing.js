@@ -1,10 +1,11 @@
 const backgroundColorSetter = (passwordStrengthNumber)=>{
+const headerName='.header'
+
     const body = document.querySelector('body')
-    const title = document.querySelector('.title')
+    const title = document.querySelector(headerName)
     switch(passwordStrengthNumber){
         case 0:{
             body.style.background="#2e2e2e"
-            // body.style.backgroundImage="linear-gradient(#2e2e2e, #FFF)"
             title.style.color="#2e2e2e"
             break;
         }

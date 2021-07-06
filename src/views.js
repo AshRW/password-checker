@@ -46,7 +46,8 @@ const renderInfo = (infoObj)=>{
 }
 
 const clearInfo=()=>{
-    infoContainer.innerHTML='Result Appears here'
+    // infoContainer.innerHTML='Type password above'
+    infoContainer.innerHTML=''
     backgroundColorSetter(0)
 }
 

@@ -5,24 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Yo Pass!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;500;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.png" type="image">
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/newstyle.css">
 </head>
 <body>
-    <div class="center">
-        <div class="title">
+    <!-- <div class="center"> -->
+        <header class="header shade">
             <H1>Check Yo Password!</H1>
             <H5 class="h5-warning"></H5>
-        </div>
+        </header>
         <div class="container">
-            <div class="container-items info-container">
-                Result Appears here
+            <div class="main container-items shade">
+
+                <div class="form-container">
+                    <label for="password_input"> Type Your Password:
+                    <input type="password" id="password_input" placeholder="Start Typing to see results" autofocus></label>
+                </div>
+                <div class="info-container">
+                    <!-- Type password above -->
+                </div>
+
             </div>
-            <div class="container-items form-container">
-                <input type="password" id="password_input" placeholder="Start Typing To See Results">
+            <div class="side container-items shade">
+                Source Code <a href="https://github.com/AshRW/password-checker">Here</a>. Uses RegEx to score security points for your password. Built on a Boilerplate which uses Babel & Webpack
             </div>
+            
         </div>
-    </div>
+        <footer class="footer">We do not save your password</footer>
+    <!-- </div> -->
 
     <script src="./scripts/main.js"></script>
 </body>
