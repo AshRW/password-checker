@@ -1,6 +1,7 @@
 import { backgroundColorSetter } from "./cssProcessing";
 import { breakingTime, passwordStrength } from "./passwordProcessing";
 
+const warning = document.querySelector('.h5-warning')
 const infoContainer = document.querySelector('.info-container');
 const renderInfo = (infoObj)=>{
     const passStrength = passwordStrength(infoObj)
@@ -33,10 +34,12 @@ const renderInfo = (infoObj)=>{
     infoWrapper.appendChild(hackText)
 
     infoContainer.appendChild(infoWrapper)
-
+    
     if(infoObj.length>0 && infoObj.length<8){
+        warning.textContent="Enter at least an 8 character password"
         backgroundColorSetter(7);
     }else{
+        warning.textContent=
         backgroundColorSetter(passStrength["number"])
     }
 
