@@ -1,0 +1,81 @@
+html{
+    margin: 0;
+    height: 100%;
+}
+body {
+    /* color: #fff; */
+    font-family: 'Noto Sans', sans-serif;
+    transition: all 1s;
+    margin: 0;
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.container{
+    /* border: solid 1px white; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+}
+
+.center{
+    display: table-cell;;
+    vertical-align: middle;
+}
+
+.title{
+    text-align: center;
+    border-radius: 7px;
+    margin: 0 4em 1em 4em;
+    padding: 2em;
+    background: #cfcfcf;
+    opacity: 0.7;
+    transition: all 1s;
+    animation-name: dropFromTop;
+    animation-duration: 1s;
+}
+
+.container-items{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    background: #cfcfcf;
+    opacity: 0.7;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    height: 3rem;
+}
+
+.info-container{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.info-wrapper{
+    justify-content: space-evenly;
+}
+
+
+@keyframes dropFromTop{
+    0%{
+        transform: translateY(-100px)
+    }
+    100%{
+        transform: translate(0);
+    }
+}
