@@ -8,7 +8,7 @@ input.addEventListener('input', (e)=>{
     const input = e.target.value;
     if(input){
         if(!/^\s+/.test(input)){
-            if(input.length<=55){
+            if(input.length<=128){
                 const passwordResultObj = passwordChecker(input)
                 renderInfo(passwordResultObj)
             }

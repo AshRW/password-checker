@@ -39,8 +39,11 @@ const renderInfo = (infoObj)=>{
         warning.textContent="Enter at least an 8 character password"
         backgroundColorSetter(7);
     }else{
-        warning.textContent=
+        warning.textContent=''
         backgroundColorSetter(passStrength["number"])
+        if(passStrength["number"]>=6){
+            warning.textContent="Your Password is very safe"
+        }
     }
 
 }
